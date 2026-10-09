@@ -1,0 +1,34 @@
+local _, addon = ...
+addon.L = setmetatable({}, {
+    __index = function(_, key) return key end,
+})
+local L = addon.L
+
+L["welcome_heading"] = "Welcome to RimuruUI"
+L["welcome_body"] = "The installer will import pre-configured profiles for your addons."
+L["resolution_heading"] = "Choose Your Resolution"
+L["resolution_body"] = "This determines which profile variant is imported for each addon."
+L["current_scale"] = "Current UI Scale: "
+L["next"] = "Next"
+L["back"] = "Back"
+L["begin"] = "Begin"
+L["finish"] = "Finish"
+L["import"] = "Import"
+L["complete_heading"] = "Installation Complete"
+L["complete_body"] = "All selected profiles have been imported.\nReload your UI to apply all changes."
+L["imported_reload"] = "%s imported. Profile will apply on UI Reload."
+L["status_not_loaded"] = "Addon not loaded"
+L["status_loaded"] = "Addon loaded"
+L["status_no_data"] = "No profile data"
+L["editmode_cap"] = "Edit Mode: 5-layout cap reached, delete one first."
+L["page_welcome"] = "Welcome"
+L["page_resolution"] = "Resolution"
+L["page_complete"] = "Complete"
+L["page_ellesmereui"] = "EllesmereUI"
+L["page_editmode"] = "Edit Mode"
+L["page_bigwigs"] = "BigWigs"
+L["page_cdm"] = "Cooldowns"
+L["desc_ellesmereui"] = "The foundation of the UI\nConfigure via /ellesmereui"
+L["desc_editmode"] = "Blizzard frame layout\nESC -> Edit Mode -> select RimuruUI"
+L["desc_bigwigs"] = "Boss timers, combat timer, battle-res counter\nConfigure via /bigwigs"
+L["desc_cdm"] = "Profiles for the Blizzard Cooldown Manager"
